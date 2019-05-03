@@ -6,7 +6,6 @@
         "PoP",
         "hooks"
     ],
-    "minimum-stability": "dev",
     "homepage": "https://github.com/getpop/hooks",
     "license": "MIT",
     "authors": [
