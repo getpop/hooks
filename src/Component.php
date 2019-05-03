@@ -18,7 +18,6 @@ class Component
     public function __construct()
     {
         self::$active = true;
-        new ContractImplementations\HooksAPI();
     }
 }
 
