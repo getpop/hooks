@@ -10,7 +10,7 @@ class HooksAPIFactory
         self::$instance = $instance;
     }
 
-    public static function getInstance(): ?HooksAPIInterface
+    public static function getInstance(): HooksAPIInterface
     {
         return self::$instance;
     }
