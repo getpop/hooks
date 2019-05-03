@@ -1,4 +1,4 @@
-# hooks
+# PoP Hooks
 
 <!--
 [![Latest Version on Packagist][ico-version]][link-packagist]
