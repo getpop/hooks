@@ -21,5 +21,3 @@ class Component
         self::$active = true;
     }
 }
-
-Component::init();

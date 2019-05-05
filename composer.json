@@ -29,7 +29,7 @@
             "PoP\\Hooks\\": "src"
         },
         "files": [
-            "src/Component.php"
+            "initialize.php"
         ]
     },
     "autoload-dev": {
