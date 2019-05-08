@@ -21,10 +21,30 @@ $ composer require getpop/hooks
 
 ## Usage
 
-<!--
-``` php
+```php
+use PoP\Hooks\Facades\HooksAPI;
+
+// Get an instance of the service
+$hooksapi = HooksAPI::getInstance();
+
+// Add a hook for an Action
+$hooksapi->addAction($actionName, $functionName, $priority, $argNum);
+
+// Add a hook for a Filter
+$hooksapi->addFilter($filterName, $functionName, $priority, $argNum);
+
+// Execute an Action
+$hooksapi->doAction($actionName, $param1, $param2, ...);
+
+// Execute a Filter
+$filterValue = $hooksapi->applyFilters($filterName, $filterValue, $param1, $param2, ...);
+
+// Remove an Action
+$hooksapi->removeAction($actionName, $functionName, $priority, $argNum);
+
+// Remove a Filter
+$hooksapi->removeFilter($filterName, $functionName, $priority, $argNum);
 ```
--->
 
 ## Change log
 
