@@ -19,8 +19,6 @@ class HooksAPITestCase extends \PHPUnit\Framework\TestCase
      */
     public function testApplyFilters(): void
     {
-        //\PoP\Hooks\Contracts\HooksAPIFactory::setInstance(new \PoP\Hooks\ContractImplementations\HooksAPI());
-        //$hooksapi = \PoP\Hooks\Contracts\HooksAPIFactory::getInstance();
         $hooksapi = \PoP\Hooks\Facades\HooksAPI::getInstance();
         $this->assertEquals(
             'bar',
