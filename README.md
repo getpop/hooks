@@ -9,7 +9,7 @@
 [![Total Downloads][ico-downloads]][link-downloads]
 -->
 
-Contracts to implement hooks (filters and actions) for PoP
+Contracts to implement hooks for PoP. The concept of a “hook” is the same [as in WordPress](https://developer.wordpress.org/plugins/hooks/): an “action” allows executing extra functionality, and a “filter” allows to modify a value.
 
 ## Install
 
