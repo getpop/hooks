@@ -8,6 +8,6 @@ class HooksAPI
 {
     public static function getInstance(): HooksAPIInterface
     {
-        return ContainerBuilderFactory::getInstance()->get('\PoP\Hooks\Contracts\HooksAPI');
+        return ContainerBuilderFactory::getInstance()->get('hooks_api');
     }
 }

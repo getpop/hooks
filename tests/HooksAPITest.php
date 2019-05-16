@@ -12,7 +12,7 @@ class HooksAPITestCase extends \PHPUnit\Framework\TestCase
         parent::__construct();
         $containerBuilder = ContainerBuilderFactory::getInstance();
         $containerBuilder
-            ->register('\PoP\Hooks\Contracts\HooksAPI', HooksAPI::class);
+            ->register('hooks_api', HooksAPI::class);
     }
     /**
      * Test that applyFilter returns $value
