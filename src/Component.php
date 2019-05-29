@@ -1,10 +1,12 @@
 <?php
 namespace PoP\Hooks;
 
+use PoP\Root\Component\AbstractComponent;
+
 /**
  * Class required to check if this component exists and is active
  */
-class Component
+class Component extends AbstractComponent
 {
     /**
      * Indicate if the component is active
@@ -18,6 +20,7 @@ class Component
      */
     public static function init()
     {
+        parent::init();
         self::$active = true;
     }
 }
