@@ -22,7 +22,7 @@ $ composer require getpop/hooks
 ## Usage
 
 ```php
-use PoP\Hooks\Facades\HooksAPI;
+use PoP\Hooks\Facades\HooksAPIFacade;
 
 // Get an instance of the service
 $hooksapi = HooksAPI::getInstance();

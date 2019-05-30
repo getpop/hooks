@@ -4,6 +4,7 @@ namespace PoP\Hooks;
 
 use PoP\Root\Container\ContainerBuilderFactory;
 use PoP\Hooks\ContractImplementations\HooksAPI;
+use PoP\Hooks\Facades\HooksAPIFacade;
 
 class HooksAPITestCase extends \PHPUnit\Framework\TestCase
 {
@@ -19,7 +20,7 @@ class HooksAPITestCase extends \PHPUnit\Framework\TestCase
      */
     public function testApplyFilters(): void
     {
-        $hooksapi = \PoP\Hooks\Facades\HooksAPI::getInstance();
+        $hooksapi = HooksAPIFacade::getInstance();
         $this->assertEquals(
             'bar',
             $hooksapi->applyFilters('foo', 'bar')
