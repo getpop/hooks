@@ -19,6 +19,8 @@ Via Composer
 $ composer require getpop/hooks
 ```
 
+([PoP](https://github.com/leoloso/PoP) must be installed)
+
 ## Usage
 
 ```php
