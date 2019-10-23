@@ -1,5 +1,5 @@
 <?php
-namespace PoP\Hooks\Contracts;
+namespace PoP\Hooks;
 
 interface HooksAPIInterface
 {

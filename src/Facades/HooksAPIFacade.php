@@ -1,7 +1,7 @@
 <?php
 namespace PoP\Hooks\Facades;
 
-use PoP\Hooks\Contracts\HooksAPIInterface;
+use PoP\Hooks\HooksAPIInterface;
 use PoP\Root\Container\ContainerBuilderFactory;
 
 class HooksAPIFacade
