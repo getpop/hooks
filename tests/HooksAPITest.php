@@ -1,12 +1,13 @@
 <?php
 declare(strict_types=1);
+
 namespace PoP\Hooks;
 
 use PoP\Root\Container\ContainerBuilderFactory;
 use PoP\Hooks\ContractImplementations\HooksAPI;
 use PoP\Hooks\Facades\HooksAPIFacade;
 
-class HooksAPITestCase extends \PHPUnit\Framework\TestCase
+class HooksAPITest extends \PHPUnit\Framework\TestCase
 {
     public function __construct()
     {
