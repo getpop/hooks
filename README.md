@@ -16,7 +16,7 @@ Contracts to implement hooks for PoP. The concept of a “hook” is the same [a
 Via Composer
 
 ``` bash
-$ composer require getpop/hooks dev-master
+composer require getpop/hooks dev-master
 ```
 
 **Note:** Your `composer.json` file must have the configuration below to accept minimum stability `"dev"` (there are no releases for PoP yet, and the code is installed directly from the `master` branch):
@@ -63,7 +63,6 @@ $hooksapi->removeFilter($filterName, $functionName, $priority, $argNum);
 
 PoP uses hooks (as pioneered by [WordPress](https://codex.wordpress.org/Plugin_API)) everywhere, through both functions `doAction` and `applyFilters` as defined through interface `HooksAPI`, allowing any piece of code to be overridable by any 3rd party, or be injected extra functionality. For WordPress, the implementation of the interface is trivial. Other systems can rely on packages to implement this functionality (eg: [this one](https://github.com/tormjens/eventy) or [this one](https://github.com/voku/php-hooks)).
 
-
 ## Change log
 
 Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
@@ -71,7 +70,7 @@ Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed re
 ## Testing
 
 ``` bash
-$ composer test
+composer test
 ```
 
 ## Contributing
