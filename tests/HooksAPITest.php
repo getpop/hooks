@@ -25,7 +25,6 @@ class HooksAPITestCase extends \PHPUnit\Framework\TestCase
             'bar',
             $hooksapi->applyFilters('foo', 'bar')
         );
-        $hooksapi->addFilter('foo', [$this, 'someFilter']);
         $this->assertEquals(
             'baz',
             $hooksapi->applyFilters('foo', 'baz')
