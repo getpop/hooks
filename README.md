@@ -22,6 +22,14 @@ composer require getpop/hooks
 
 ## Usage
 
+Initialize the component:
+
+``` php
+\PoP\Hooks\Component::initialize();
+```
+
+Use it:
+
 ```php
 use PoP\Hooks\Facades\HooksAPIFacade;
 
