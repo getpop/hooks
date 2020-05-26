@@ -25,7 +25,9 @@ composer require getpop/hooks
 Initialize the component:
 
 ``` php
-\PoP\Hooks\Component::initialize();
+\PoP\Root\ComponentLoader::initializeComponents([
+    \PoP\Hooks\Component::class,
+]);
 ```
 
 Use it:
