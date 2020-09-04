@@ -11,6 +11,10 @@ class HooksAPIFacade
 {
     public static function getInstance(): HooksAPIInterface
     {
-        return ContainerBuilderFactory::getInstance()->get('hooks_api');
+        /**
+         * @var HooksAPIInterface
+         */
+        $service = ContainerBuilderFactory::getInstance()->get('hooks_api');
+        return $service;
     }
 }
