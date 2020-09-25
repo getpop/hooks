@@ -5,10 +5,10 @@ namespace PoP\Hooks\ContractImplementations;
 
 class HooksAPI implements \PoP\Hooks\HooksAPIInterface
 {
-    public function addFilter(string $tag, $function_to_add, int $priority = 10, int $accepted_args = 1): void
+    public function addFilter(string $tag, callable $function_to_add, int $priority = 10, int $accepted_args = 1): void
     {
     }
-    public function removeFilter(string $tag, $function_to_remove, int $priority = 10): bool
+    public function removeFilter(string $tag, callable $function_to_remove, int $priority = 10): bool
     {
         return true;
     }
@@ -16,10 +16,10 @@ class HooksAPI implements \PoP\Hooks\HooksAPIInterface
     {
         return $value;
     }
-    public function addAction(string $tag, $function_to_add, int $priority = 10, int $accepted_args = 1): void
+    public function addAction(string $tag, callable $function_to_add, int $priority = 10, int $accepted_args = 1): void
     {
     }
-    public function removeAction(string $tag, $function_to_remove, int $priority = 10): bool
+    public function removeAction(string $tag, callable $function_to_remove, int $priority = 10): bool
     {
         return true;
     }
