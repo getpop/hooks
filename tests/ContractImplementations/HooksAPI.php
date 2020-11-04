@@ -12,6 +12,11 @@ class HooksAPI implements \PoP\Hooks\HooksAPIInterface
     {
         return true;
     }
+    /**
+     * @param mixed $value
+     * @param mixed ...$args
+     * @return mixed
+     */
     public function applyFilters(string $tag, $value, ...$args)
     {
         return $value;
@@ -23,6 +28,9 @@ class HooksAPI implements \PoP\Hooks\HooksAPIInterface
     {
         return true;
     }
+    /**
+     * @param mixed ...$args
+     */
     public function doAction(string $tag, ...$args): void
     {
     }
