@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace PoP\Hooks;
 
-use Symfony\Contracts\Service\Attribute\Required;
-use PoP\Translation\TranslationAPIInterface;
 use PoP\ComponentModel\Instances\InstanceManagerInterface;
 use PoP\Root\Services\AbstractAutomaticallyInstantiatedService;
+use PoP\Translation\TranslationAPIInterface;
+use Symfony\Contracts\Service\Attribute\Required;
 
 abstract class AbstractHookSet extends AbstractAutomaticallyInstantiatedService
 {
@@ -16,7 +16,7 @@ abstract class AbstractHookSet extends AbstractAutomaticallyInstantiatedService
     protected InstanceManagerInterface $instanceManager;
 
     #[Required]
-    public function autowireAbstractHookSet(HooksAPIInterface $hooksAPI, TranslationAPIInterface $translationAPI, InstanceManagerInterface $instanceManager): void
+    final public function autowireAbstractHookSet(HooksAPIInterface $hooksAPI, TranslationAPIInterface $translationAPI, InstanceManagerInterface $instanceManager): void
     {
         $this->hooksAPI = $hooksAPI;
         $this->translationAPI = $translationAPI;
