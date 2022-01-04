@@ -16,10 +16,10 @@ class Component extends AbstractComponent
      *
      * @return string[]
      */
-    public static function getDependedComponentClasses(): array
+    public function getDependedComponentClasses(): array
     {
         return [
-            \PoP\Root\Component::class,
+            \PoP\Translation\Component::class,
         ];
     }
 }
